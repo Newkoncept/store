@@ -1,11 +1,22 @@
+/* GENERAL STYLING */
+@font-face {
+  font-family: ir;
+  src: url(font/Inter-Regular.ttf);
+}
 body {
+  font-family: ir;
+  font-weight: 400;
   background: #0f0f0f;
   color: #fff;
+  font-size: 18px;
 }
 
+/* GENERAL CLASSES */
 .btn {
-  padding: 15px 50px;
-  font-size: 18px;
+  width: 295px;
+  height: 59px;
+  border-radius: 5px;
+  font-size: 16px;
   color: #fff;
   border: 5px solid transparent;
   border-image: linear-gradient(15deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
@@ -26,16 +37,43 @@ body {
     #f90b36 103.73%
   );
   border-image-slice: 1;
+  background-clip: border-box, text;
+  -moz-background-clip: border-box, text;
+  -webkit-background-clip: border-box, text;
+  background-origin: border-box;
+  border-radius: 30px;
+}
+.btn:hover {
+  color: #fff;
+}
+.arrow {
+  font-size: 20px;
 }
 
 hr .container-fluid {
   width: 95%;
 }
 
+/* COLOUR */
+.dark-red {
+  color: #a53333;
+}
+.dark-yellow {
+  color: #cf6402;
+}
+.dark-blue {
+  color: #085066;
+}
+.dark-purple {
+  color: #c964c5;
+}
+
+/* NAVIGATION */
 nav {
   background-image: linear-gradient(90deg, #ffc75a 0%, #ea7000 23.94%, #00a3d7 49.47%, #91048b 73.94%, #ff4949 102.13%);
 }
 
+/* HEADER SECTION */
 header .colorful {
   background-image: linear-gradient(90deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
   background-size: 100%;
@@ -46,15 +84,27 @@ header .colorful {
   -moz-text-fill-color: transparent;
   background-clip: text;
 }
-
 header .header-text {
   color: #6d6d6d;
 }
-
-.process img {
-  width: 600px;
+header h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+.desktop-header-image img {
+  width: 85%;
+  margin: auto;
+  display: block;
+}
+.mobile-header-image {
+  display: none;
 }
 
+/* DESCRIPTION SECTION */
+.description {
+  margin: 90px auto !important;
+  width: 55% !important;
+}
 .description hr {
   border: 2px solid transparent;
   border-image: linear-gradient(15deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
@@ -76,24 +126,64 @@ header .header-text {
   );
   border-image-slice: 1;
 }
+.description h2 {
+  font-weight: 700;
+}
+.description-text {
+  width: 90% !important;
+}
 
+/* PROCESS SECTION */
+.process .container-fluid {
+  width: 90% !important;
+}
+.process img {
+  width: 600px;
+}
 .process-number {
   font-size: 80px;
-  border: 2px solid red;
   display: inline-block;
-  border-radius: 100%;
   padding: 20px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(15deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
+  -moz-border-image: -moz-linear-gradient(
+    15deg,
+    #ffc75a 0%,
+    #ea7000 28.63%,
+    #00a3d7 53.49%,
+    #90048b 78.88%,
+    #f90b36 103.73%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    15deg,
+    #ffc75a 0%,
+    #ea7000 28.63%,
+    #00a3d7 53.49%,
+    #90048b 78.88%,
+    #f90b36 103.73%
+  );
+  border-image-slice: 1;
+  border-bottom-left-radius: 50%;
+  border-radius: 50%;
 }
-
 .process-heading {
+  font-weight: 700;
   font-size: 48px;
 }
-
 .process-description {
+  font-weight: 500;
   font-size: 18px;
   color: #d5d5d5;
 }
+.mobile-process-image {
+  display: none;
+}
 
+/* SUPERMAN SECTION */
+.superman h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
 .superman .card {
   background: #252525;
   color: #ffffff;
@@ -101,20 +191,58 @@ header .header-text {
 .superman .card img {
   padding-right: 10px;
 }
+.superman-plugin {
+  width: 40%;
+  margin: auto;
+}
+.superman .card-one {
+  border: 1px solid transparent;
+  border-image: linear-gradient(180deg, #ffc75a 0%, #ea7000 50%, #ff4949 98.44%);
+  -moz-border-image: -moz-linear-gradient(180deg, #ffc75a 0%, #ea7000 50%, #ff4949 98.44%);
+  -webkit-border-image: -webkit-linear-gradient(180deg, #ffc75a 0%, #ea7000 50%, #ff4949 98.44%);
+  border-image-slice: 1;
+}
+.superman .card-two {
+  border: 1px solid transparent;
+  border-image: linear-gradient(180deg, #00a3d7 0%, #91048b 98.44%);
+  -moz-border-image: -moz-linear-gradient(180deg, #00a3d7 0%, #91048b 98.44%);
+  -webkit-border-image: -webkit-linear-gradient(180deg, #00a3d7 0%, #91048b 98.44%);
+  border-image-slice: 1;
+}
+.superman .card-three {
+  border: 1px solid transparent;
+  border-image: linear-gradient(180deg, #91048b 0%, #ff4949 100%);
+  -moz-border-image: -moz-linear-gradient(180deg, #91048b 0%, #ff4949 100%);
+  -webkit-border-image: -webkit-linear-gradient(180deg, #91048b 0%, #ff4949 100%);
+  border-image-slice: 1;
+}
+
+/* FOOTER */
 footer {
   background: #1d1c1c;
 }
+footer h2 {
+  font-weight: 700;
+  font-size: 50px;
+}
 
-@media only screen and (max-width: 1279px) {
-  .description.w-50 {
+/* TABLET VIEW */
+@media only screen and (max-width: 1200px) {
+  .description {
+    margin: 90px auto !important;
     width: 80% !important;
   }
+  .description.w-50 {
+    width: 90% !important;
+  }
   header.w-50 {
-    width: 75% !important;
+    width: 85% !important;
   }
 }
 
+/* MOBILE DEVICES VIEW */
 @media only screen and (max-width: 450px) {
+  /* GENERAL CLASS */
   header,
   header.w-50,
   header .header-text,
@@ -127,8 +255,58 @@ footer {
   .description.w-50 {
     width: 90% !important;
   }
-  .process img {
-    width: 300px;
-    max-width: 100%;
+
+  /* HEADER SECTION */
+  .desktop-header-image {
+    display: none;
+  }
+  .mobile-header-image {
+    display: block;
+  }
+  .mobile-header-image img {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+
+  /* DESCRIPTION SECTION */
+  .description,
+  .description hr {
+    width: 90% !important;
+  }
+  .description h2 {
+    font-size: 30px;
+  }
+  .description .dark-red {
+    display: block;
+  }
+
+  /* PROCESS SECTION */
+  .desktop-process-image {
+    display: none;
+  }
+  .mobile-process-image {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .mobile-process-image img {
+    width: 90%;
+    margin: auto;
+  }
+  .process-heading {
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  /* SUPERMAN SECTION */
+  .superman-plugin {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* FOOTER SECTION */
+  footer h2 {
+    font-weight: 700;
+    font-size: 30px;
   }
 }

@@ -1,0 +1,134 @@
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.btn {
+  padding: 15px 50px;
+  font-size: 18px;
+  color: #fff;
+  border: 5px solid transparent;
+  border-image: linear-gradient(15deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
+  -moz-border-image: -moz-linear-gradient(
+    15deg,
+    #ffc75a 0%,
+    #ea7000 28.63%,
+    #00a3d7 53.49%,
+    #90048b 78.88%,
+    #f90b36 103.73%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    15deg,
+    #ffc75a 0%,
+    #ea7000 28.63%,
+    #00a3d7 53.49%,
+    #90048b 78.88%,
+    #f90b36 103.73%
+  );
+  border-image-slice: 1;
+}
+
+hr .container-fluid {
+  width: 95%;
+}
+
+nav {
+  background-image: linear-gradient(90deg, #ffc75a 0%, #ea7000 23.94%, #00a3d7 49.47%, #91048b 73.94%, #ff4949 102.13%);
+}
+
+header .colorful {
+  background-image: linear-gradient(90deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+}
+
+header .header-text {
+  color: #6d6d6d;
+}
+
+.process img {
+  width: 600px;
+}
+
+.description hr {
+  border: 2px solid transparent;
+  border-image: linear-gradient(15deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
+  -moz-border-image: -moz-linear-gradient(
+    15deg,
+    #ffc75a 0%,
+    #ea7000 28.63%,
+    #00a3d7 53.49%,
+    #90048b 78.88%,
+    #f90b36 103.73%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    15deg,
+    #ffc75a 0%,
+    #ea7000 28.63%,
+    #00a3d7 53.49%,
+    #90048b 78.88%,
+    #f90b36 103.73%
+  );
+  border-image-slice: 1;
+}
+
+.process-number {
+  font-size: 80px;
+  border: 2px solid red;
+  display: inline-block;
+  border-radius: 100%;
+  padding: 20px;
+}
+
+.process-heading {
+  font-size: 48px;
+}
+
+.process-description {
+  font-size: 18px;
+  color: #d5d5d5;
+}
+
+.superman .card {
+  background: #252525;
+  color: #ffffff;
+}
+.superman .card img {
+  padding-right: 10px;
+}
+footer {
+  background: #1d1c1c;
+}
+
+@media only screen and (max-width: 1279px) {
+  .description.w-50 {
+    width: 80% !important;
+  }
+  header.w-50 {
+    width: 75% !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header,
+  header.w-50,
+  header .header-text,
+  .description,
+  .description .description-text,
+  .w-50,
+  .process-description {
+    width: 100% !important;
+  }
+  .description.w-50 {
+    width: 90% !important;
+  }
+  .process img {
+    width: 300px;
+    max-width: 100%;
+  }
+}

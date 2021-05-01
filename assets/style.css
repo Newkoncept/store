@@ -51,13 +51,17 @@ a:hover {
 .arrow {
   font-size: 20px;
 }
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 4.15rem;
+  left: 18%;
+}
 .carousel-btn {
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
   letter-spacing: 0em;
-  height: 29px;
-  width: 105px;
   padding: 19px 66px;
   background: #fff;
   border-radius: 75px;
@@ -249,12 +253,8 @@ header .header-text {
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  display: inline-block;
   width: 5rem;
   height: 5rem;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 100% 100%;
 }
 
 /* SUPERMAN SECTION */
@@ -352,11 +352,6 @@ footer .btn {
     linear-gradient(90deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
 }
 
-@media (min-width: 1441px) {
-  body {
-    /* display: none; */
-  }
-}
 @media only screen and (max-width: 1378px) {
   .description {
     width: 85% !important;
@@ -438,6 +433,34 @@ footer .btn {
   header .header-text {
     width: 80% !important;
   }
+  .slider-show {
+    margin-top: 100px;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.15rem;
+    left: 18%;
+  }
+  .carousel-item {
+    /* padding-right: 500px; */
+    width: 100% !important;
+  }
+  .carousel-btn {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    padding: 10px 50px;
+    background: #fff;
+    border-radius: 75px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 }
 
 /* TABLET VIEW */
@@ -470,6 +493,12 @@ footer .btn {
   }
   .process .slider-show {
     width: 120%;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 5.55rem;
+    left: 18%;
   }
   .carousel-btn {
     font-size: 24px;
@@ -508,32 +537,6 @@ footer .btn {
   .superman-plugin {
     width: 80% !important;
   }
-}
-
-@media only screen and (max-width: 1200px) {
-  /* .description {
-    margin: 90px auto !important;
-    width: 80% !important;
-  }
-  .description.w-50 {
-    width: 90% !important;
-  }
-  header.w-50 {
-    width: 85% !important;
-  }
-  .process-heading {
-    margin: auto;
-  }
-  .process-number {
-    width: 130px;
-    height: 130px;
-    padding-top: unset;
-    padding-left: unset;
-  }
-  .superman-plugin {
-    width: 60%;
-    margin: auto;
-  } */
 }
 
 /* MOBILE DEVICES VIEW */
@@ -659,10 +662,16 @@ footer .btn {
   .process .slider-show {
     width: 110%;
   }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.15rem;
+    left: 18%;
+  }
   .carousel-btn {
     font-size: 16px;
     font-weight: 500;
-    line-height: 29px;
+    /* line-height: 29px; */
     letter-spacing: 0em;
     padding: 10px 40px;
     background: #fff;
@@ -673,10 +682,8 @@ footer .btn {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    margin-bottom: 40px;
-    text-align: center;
-    margin: auto;
   }
+
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
     display: inline-block;

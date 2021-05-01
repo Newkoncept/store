@@ -352,6 +352,11 @@ footer .btn {
     linear-gradient(90deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, #f90b36 103.73%);
 }
 
+@media (min-width: 1441px) {
+  body {
+    /* display: none; */
+  }
+}
 @media only screen and (max-width: 1378px) {
   .description {
     width: 85% !important;
@@ -389,7 +394,6 @@ footer .btn {
     width: 85% !important;
   }
 }
-
 @media (max-width: 1200px) {
   .description {
     width: 95% !important;
@@ -417,13 +421,11 @@ footer .btn {
     height: 230px;
   }
 }
-
 @media (max-width: 1110px) and (min-width: 992px) {
   .superman-plugin {
     width: 85% !important;
   }
 }
-
 @media (max-width: 1119px) and (min-width: 1042px) {
   header .header-text {
     width: 80%;
@@ -439,6 +441,75 @@ footer .btn {
 }
 
 /* TABLET VIEW */
+@media (max-width: 992px) and (min-width: 768px) {
+  header .header-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    width: 88% !important;
+    margin-bottom: 43px;
+  }
+  .process .container-fluid {
+    width: 98% !important;
+  }
+  .process img {
+    width: 100%;
+  }
+  .process-heading {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .process-description {
+    width: 75% !important;
+    margin: auto;
+  }
+  .process-number {
+    padding-left: 0px;
+  }
+  .process .slider-show {
+    width: 120%;
+  }
+  .carousel-btn {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    height: 29px;
+    width: 105px;
+    padding: 19px 66px;
+    background: #fff;
+    border-radius: 75px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 3em;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+  }
+  .superman .card {
+    height: 190px;
+    width: 90% !important;
+    margin: auto;
+  }
+  .superman .container {
+    max-width: 90% !important;
+  }
+  .superman-plugin {
+    width: 80% !important;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   /* .description {
     margin: 90px auto !important;

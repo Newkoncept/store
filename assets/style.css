@@ -18,6 +18,13 @@ body {
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
 /* GENERAL CLASSES */
 .btn {
   width: 295px;
@@ -43,6 +50,23 @@ body {
 }
 .arrow {
   font-size: 20px;
+}
+.carousel-btn {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  height: 29px;
+  width: 105px;
+  padding: 19px 66px;
+  background: #fff;
+  border-radius: 75px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 hr .container-fluid {
@@ -122,11 +146,11 @@ header .header-text {
 
 /* DESCRIPTION SECTION */
 .description {
-  margin: 90px auto !important;
+  margin: -2px auto !important;
   width: 75% !important;
 }
 .description hr {
-  border: double 2px transparent;
+  border: double 3px transparent;
   border-radius: 5px;
   background-image: linear-gradient(var(--body-background-color), var(--body-background-color)),
     linear-gradient(90deg, #ffc75a 0%, #ea7000 28.63%, #00a3d7 53.49%, #90048b 78.88%, hsl(349, 95%, 51%) 103.73%);
@@ -216,6 +240,21 @@ header .header-text {
 }
 .mobile-process-text {
   display: none;
+}
+.carousel-control-next-icon {
+  background-image: url("../assets/img/right.png");
+}
+.carousel-control-prev-icon {
+  background-image: url("../assets/img/left.png");
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
 }
 
 /* SUPERMAN SECTION */
@@ -532,7 +571,7 @@ footer .btn {
     width: 95% !important;
   }
   .process-three {
-    padding-top: 0px;
+    padding-top: 10px;
   }
   .desktop-process-image,
   .desktop-process-text {
@@ -548,6 +587,33 @@ footer .btn {
   }
   .process .slider-show {
     width: 110%;
+  }
+  .carousel-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    padding: 10px 40px;
+    background: #fff;
+    border-radius: 75px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    margin-bottom: 40px;
+    text-align: center;
+    margin: auto;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 3em;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
   }
 
   /* SUPERMAN SECTION */
